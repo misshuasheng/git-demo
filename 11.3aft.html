@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>vue.js</title>
+	<script src="vue.min.js"></script>
+</head>
+<body>
+	<div id="fir">
+		<p>{{message}}</p>
+	</div>
+	<div id="sec">
+		<p>{{msg}}</p>
+		<input type="" name="" v-if="aha" v-model="msg" style="color: red">
+		<input type="" name="" v-if="eheng" v-model="msg" style="color:black">
+	</div>
+</body>
+<script type="text/javascript">
+	new Vue({
+		el:'#fir',
+		data:{
+			message:'hello my first vue example!'
+		}
+	})
+	new Vue({
+		el:'#sec',
+		data:{
+			msg:'我就是试一下啦',
+			aha:true,
+			eheng:false
+		}
+	})
+</script>
+</html>
