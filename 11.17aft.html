@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="swiper.min.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="swiper.min.js"></script>
+</head>
+<body>
+	<!-- 面包屑导航 -->
+	<ol class="breadcrumb">
+		<li id="1"></li>
+		<li id="2"></li>
+		<li id="3"></li>
+	</ol>
+
+
+	<!-- 分页器 -->
+	<ul class="pagination">
+		<li class="disabled"><a href="">1</a></li>
+		<li class="active"><a href="">2</a></li>
+		<li><a href="">3</a></li>
+		<li ><a href="">4</a></li>
+		
+	</ul>
+
+
+	<!-- 徽章 -->
+	<ul class="nav nav-pills">
+		<li class="active"><a href="">未读信息 <span class="badge">10</span></a></li>
+		<li><a href="">two</a></li>
+		<li><a href="">three <span class="badge pull-right">30</span></a></li>
+	</ul>
+	
+
+	<!-- 超大屏幕 -->
+	<div class="container">
+		<div class="jumbotron">
+			<h4>HELLO!</h4>
+			<p>这是一个超大屏幕</p>
+			<button class="btn btn-primary btn-lg">登录</button>
+		</div>
+	</div>
+
+
+	<!-- 警告 -->
+	<div class="container">
+		<span class="alert alert-success">成功</span>
+		<span class="alert alert-info">信息</span>
+		<span class="alert alert-warning">警告</span>
+		<span class="alert alert-danger">错误</span>
+	</div><br><br><br>                                                                                                       
+
+
+
+	<div class="container progress">
+		<div class="progress-bar" style="width: 40%" aria-valuenow="60" aria-valuemax="100">
+			<span class="sr-only">40%</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var date = new Date();
+	var year = date.getFullYear();
+	var month = date.getMonth()+1;
+	var dateN = date.getDate();
+	$('#1').html(year);
+	$('#2').text(month);
+	$('#3').html(dateN);
+</script>
+</html>
